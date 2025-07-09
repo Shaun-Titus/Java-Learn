@@ -8,6 +8,14 @@ public class Main {
 
         String item;
         double price;
+        int quantity;
+        char curency = '$';
+        double total;
+
+        System.out.print("What item would you like to buy: ");
+        item = scanner.nextLine();
+
+        System.out.println(item);
 
 
 
