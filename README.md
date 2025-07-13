@@ -1,5 +1,5 @@
 # Projects I did to learn
+### **codes are available in commits**
 
-**available in commits**
-### Shopping Cart
-### Compound Interest Calculator
+## 1)Shopping Cart
+## 2)Compound Interest Calculator
