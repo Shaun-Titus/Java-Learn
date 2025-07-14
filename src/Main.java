@@ -3,37 +3,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // WEIGHT CONVERSION PROGRAM
+        // Enhanced switch = A replacement to many else if statements
+        //                                   (Java14 feature)
 
         Scanner scanner = new Scanner(System.in);
 
-        double weight;
-        double newWeight;
-        int choice;
+        System.out.print("Enter the day of the week: ");
+        String day = scanner.nextLine();
 
-        System.out.println("Weight Conversion Program");
-        System.out.println("1: Convert lbs to kgs");
-        System.out.println("2: Convert kgs to lbs");
-
-        System.out.print("Choose an option: ");
-        choice = scanner.nextInt();
-
-        if(choice == 1){
-            System.out.print("Enter the weight in lbs: ");
-            weight = scanner.nextDouble();
-            newWeight = weight * 0.453592;
-            System.out.printf("The new weight in kgs is: %.2f", newWeight);
+        switch(day){
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ->
+                    System.out.println("It is a weekday 😩");
+            case "Saturday", "Sunday" ->
+                    System.out.println("It is the weekend 😀");
+            default -> System.out.println(day + " is not a day");
         }
-        else if(choice == 2){
-            System.out.print("Enter the weight in kgs: ");
-            weight = scanner.nextDouble();
-            newWeight = weight * 2.20462;
-            System.out.printf("The new weight in lbs is: %.2f", newWeight);
-        }
-        else{
-            System.out.println("That was not a valid choice");
-        }
-
-        scanner.close();
     }
 }
