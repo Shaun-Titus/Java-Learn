@@ -3,20 +3,53 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // Enhanced switch = A replacement to many else if statements
-        //                                   (Java14 feature)
-
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the day of the week: ");
-        String day = scanner.nextLine();
+        // EXAMPLE 1
 
-        switch(day){
-            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ->
-                    System.out.println("It is a weekday 😩");
-            case "Saturday", "Sunday" ->
-                    System.out.println("It is the weekend 😀");
-            default -> System.out.println(day + " is not a day");
+        String name = "";
+
+        while(name.isEmpty()){
+            System.out.print("Enter your name: ");
+            name = scanner.nextLine();
         }
+
+        System.out.println("Hello " + name);
+
+        // EXAMPLE 2
+
+        String response = "";
+
+        while(!response.equals("Q")){
+            System.out.print("Press Q to quit: ");
+            response = scanner.next().toUpperCase();
+        }
+
+        System.out.println("You have quit");
+
+        // EXAMPLE 3
+
+        int age = 0;
+
+        do{
+            System.out.println("Your age can't be negative");
+            System.out.print("Enter your age: ");
+            age = scanner.nextInt();
+        }while(age < 0);
+
+        System.out.println("You are " + age + " years old");
+
+        // EXAMPLE 4
+
+        int number = 0;
+
+        do{
+            System.out.print("Enter a number between 1-10: ");
+            number = scanner.nextInt();
+        }while(number < 1 || number > 10);
+
+        System.out.println("You picked number: " + number);
+
+        scanner.close();
     }
 }
