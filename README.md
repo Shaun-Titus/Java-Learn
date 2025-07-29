@@ -1,5 +1,4 @@
 # Projects I did to learn
-###### **codes are available in src
 
 ## 1)Shopping Cart Project
 ## 2)Compound Interest Calculator Project
