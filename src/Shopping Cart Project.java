@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 class ShoppingCart{
 public static void main(String[] args){
         System.out.print("What item would you like to buy: ");
@@ -16,3 +16,4 @@ public static void main(String[] args){
         System.out.println("Your Total is "+ curency+total);
 }
 }
+*/

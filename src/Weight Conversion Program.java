@@ -1,6 +1,6 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
-public class Main {
+public class Weight {
     public static void main(String[] args) {
 
         // WEIGHT CONVERSION PROGRAM
@@ -36,3 +36,4 @@ public class Main {
         scanner.close();
     }
 }
+*/

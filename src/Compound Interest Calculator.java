@@ -1,9 +1,8 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
-public class Main {
+public class Compound {
     public static void main(String[] args) {
-
-    public static void main(String[] args){
+        public static void main(String[] args){
         // Compound interest calculator
 
         Scanner scanner = new Scanner(System.in);
@@ -53,4 +52,4 @@ public class Main {
 
 }
 
-}
+}*/

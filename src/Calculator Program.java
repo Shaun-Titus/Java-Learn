@@ -1,6 +1,7 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
-public class Main {
+public class Calc
+{
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -47,3 +48,4 @@ public class Main {
         scanner.close();
     }
 }
+*/
